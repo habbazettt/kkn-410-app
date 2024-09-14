@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { FaBars, FaTimes } from 'react-icons/fa'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
     const [open, setOpen] = useState(false)
@@ -23,9 +24,9 @@ const Navbar = () => {
                     <div className='hidden md:block'>
                         <div className='ml-10 flex items-baseline space-x-4'>
                             <ul className='flex justify-center items-center gap-10'>
-                                <li className='text-primary px-3 py-2 duration-200 ease-in hover:bg-primary hover:text-white rounded-md'><a href='/'>Beranda</a></li>
-                                <li className='text-primary px-3 py-2 duration-200 ease-in hover:bg-primary hover:text-white rounded-md'><a href='/gallery'>Galeri</a></li>
-                                <li className='text-primary px-3 py-2 duration-200 ease-in hover:bg-primary hover:text-white rounded-md'><a href='/logbook'>logbook</a></li>
+                                <li className='text-primary px-3 py-2 duration-200 ease-in hover:bg-primary hover:text-white rounded-md'><Link to='/'>Beranda</Link></li>
+                                <li className='text-primary px-3 py-2 duration-200 ease-in hover:bg-primary hover:text-white rounded-md'><Link to='/gallery'>Galeri</Link></li>
+                                <li className='text-primary px-3 py-2 duration-200 ease-in hover:bg-primary hover:text-white rounded-md'><Link to='/logbook'>logbook</Link></li>
                             </ul>
                         </div>
                     </div>
@@ -45,9 +46,9 @@ const Navbar = () => {
                     <div className='md:hidden'>
                         <div className='px-2 pt-2 pb-3 space-y-1 sm:px-3'>
                             <ul className='flex flex-col justify-center items-center gap-4'>
-                                <li className='text-primary block px-3 py-2 rounded-md text-base duration-500 ease-in-out hover:bg-primary hover:text-white hover:font-medium w-full text-center'><a href=' /'>Beranda</a></li>
-                                <li className='text-primary block px-3 py-2 rounded-md text-base duration-500 ease-in-out hover:bg-primary hover:text-white hover:font-medium w-full text-center'><a href='/gallery'>Galeri</a></li>
-                                <li className='text-primary block px-3 py-2 rounded-md text-base duration-500 ease-in-out hover:bg-primary hover:text-white hover:font-medium w-full text-center'><a href='/logbook'>logbook</a></li>
+                                <li className='text-primary block px-3 py-2 rounded-md text-base duration-500 ease-in-out hover:bg-primary hover:text-white hover:font-medium w-full text-center'><Link to=' /'>Beranda</Link></li>
+                                <li className='text-primary block px-3 py-2 rounded-md text-base duration-500 ease-in-out hover:bg-primary hover:text-white hover:font-medium w-full text-center'><Link to='/gallery'>Galeri</Link></li>
+                                <li className='text-primary block px-3 py-2 rounded-md text-base duration-500 ease-in-out hover:bg-primary hover:text-white hover:font-medium w-full text-center'><Link to='/logbook'>logbook</Link></li>
                             </ul>
                         </div>
                     </div >
